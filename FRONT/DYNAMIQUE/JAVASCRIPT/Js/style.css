@@ -1,0 +1,45 @@
+/* Background Liens, Accueil, Tableau, Formulaire */
+nav{
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 18px 18px 18px 18px;
+
+}
+
+/* Titre "Tout le jardin" */
+.jardin {
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50;
+}
+
+/* Couleur liens: Accueil,Tableau, Formulaire */
+a {
+    color: rgb(255, 255, 255);
+}
+
+/* Image du Logo*/
+#logo {
+    height:90px; width:300px;
+    float: left;
+}
+
+/* Colonne de Droite Background */
+#grandediv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+
+
+/*Ecriture dans colonne */
+#ecriture {
+    background-color: rgb(223, 222, 222);
+    float: right;
+    width: 22rem;
+    height: auto;
+}

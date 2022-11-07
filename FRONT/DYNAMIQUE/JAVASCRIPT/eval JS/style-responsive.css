@@ -1,0 +1,102 @@
+/* Background Liens, Accueil, Tableau, Formulaire */
+    nav{
+        background-color: black;
+        margin-bottom: 10px;
+        padding: 18px 18px 18px 18px;
+        margin-top: 10px;
+    }
+
+/*En-tête du logo*/
+    .header{
+        display: flex;
+    }
+
+/* Titre "Tout le jardin" */
+    .jardin {
+        font-size: 30pt;
+        margin-top:40px;
+        margin-left: 550px;
+        display:inline;
+    }
+
+/* Couleur liens: Accueil,Tableau, Formulaire */
+    a {
+        color: rgb(255, 255, 255);
+    }
+
+/* Titre "Tout le jardin" */
+    .jardin {
+        font-size: 20pt;
+        margin-top:30px;
+        margin-left: 550px;
+        display:inline;
+    }
+
+/* Image grandedivdu Logo*/
+    #logo {
+        height:100px; 
+        width:200px;
+        display:inline;
+    
+    }
+
+/* Colonne de Droite Background */
+    #grandediv {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+/*Ecriture dans colonne */
+    #ecriture {
+        background-color: rgb(223, 222, 222);
+        float: right;
+        width: 22rem;
+        height: auto;
+    }
+
+/* Responsive */
+    @media screen and (max-width:768px){
+        /* Ecriture dans colonne */
+        #ecriture {
+            display: none;
+            }
+        
+        /* Image grandedivdu Logo*/
+        #logo {
+            height: 5rem; 
+            width: 9.8125rem;
+            max-width: 100%;
+            margin-top: 1.875rem;
+            }        
+        
+        /* Titre "Tout le jardin" */
+        .jardin {
+            font-size: 1rem;
+            margin-top:2.875rem;
+            margin-left: 12.5rem;
+            margin-top: 3.125rem;
+            }
+
+        /* Colonne Accueil, Tableau, Contact */
+        li{
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Colonne de Droite Background */
+        #grandediv {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            
+        }
+
+        /* Texte, Tableau et Formulaire */
+        div{
+            font-size:10px;
+        }
+    }
+
+        

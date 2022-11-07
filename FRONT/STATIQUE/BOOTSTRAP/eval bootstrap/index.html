@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta et link servent à intégrer le bootstrap, toujours les mettres dans le head.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Jarditou évaluation bootstrap</title>
+</head>
+
+<body>
+    <!--Contaire fluid/ contaire sert à intégrer du bootstrap responsive.-->
+    <div class="container-fluid">
+
+        <header class="header">
+<!--
+    col-4 (sert à diviser la page en 4 lorsque la page est extra small en dessous de 540px ou juste lorsque l'on ne précise pas "sm/lg/md...")
+    col-sm-4 (sert à diviser la page en 4 lorsque la page est small c'est à dire entre 576px/719px)
+    col-md-4 (sert à diviser la page en 4 lorsque la page est medium c'est à dire entre 720px/959px)
+    col-lg-4 (sert à diviser la page en 4 lorsque la page est large c'est à dire entre 960px et 1139px)
+    col-xl-4 (sert à diviser la page en 4 lorsque la page est extra large c'est à dire au dela de 1140px)
+    Le 4 du "col-//-4" sert d'exemple ça pourrait être 5 comme 12. La page peut ce couper en 12 maximum.
+-->
+            <div class="row">
+<!-- une class row sert à définir une nouvelle ligne de grille.-->
+                    <img class="col-2 col-sm-6 col-md-3 col-lg-3 d-none d-sm-block" src="img/jarditou_logo.jpg" alt="logo" class="logo" width="30px">
+                        <h2 class="col-8 col-sm-6 col-md-9 pt-3 col-lg-9 mb-0 text-right pt-3 d-none d-sm-block">Tout le jardin</h2>
+                    <!-- Le col doit toujours être dans une class. EX: (class="col-lg-12").-->
+        </div>
+        </header>
+<!-- La navbar permet de simplifier la navigation d'un site en offrant plusieurs options de configurations.-->
+        <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Jarditou.com</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                                    <!--Nav link sert à intégrer un lien à notre onglet.-->
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="tableauB.html">Tableau</a>
+                                    </li>
+                                    <li class="nav-item">
+<!--Active à coté de "nav item" sert a laisser l'onglet choisi en couleur plus foncé, ce qui permet à l'utilisateur de voir ou il est dans le menu.-->
+                                    <a class="nav-link" href="formulaireB.html">Contact</a>
+                                    </li>
+                                </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                <!-- Submit sert à envoyer.-->
+            </form>
+                    </nav>
+                </div>
+        </div>
+
+            <img src="img/promotion.jpg" alt="promotion" width="100%">
+        <div class="row m-0">
+            <div class="col-12 col-lg-8">
+                <h3>L'entreprise</h3>
+                    <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+                    <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
+                    <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</p>
+                <h3>Qualité</h3>
+                    <p> Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+                    <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+                <h3>Devis gratuit</h3>
+                    <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 bg-warning">
+            <p class="bg-warning text-center">[COLONNE DROITE]</p>
+        </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarfooter" aria-controls="navbarfooter" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarfooter">
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="">Mentions légales </a> 
+                    <a class="nav-link" href="">Horaires </a>
+                    <a class="nav-link" href="">Plan du site</a>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!--Les script en bas de pages servent à intégrer le bootstrap (bien le mettre avant la fermeture du body.) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
